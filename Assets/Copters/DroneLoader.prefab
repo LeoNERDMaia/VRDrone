@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &134186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 457934}
+  - 114: {fileID: 11423148}
+  - 114: {fileID: 11469306}
+  m_Layer: 0
+  m_Name: DroneLoader
+  m_TagString: Loader
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457934
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11423148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222e9e2ae580fe04fbedb4f0a9faa8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Drone: {fileID: 187292, guid: 1f84e8ea7c965544caa794a76a139d0d, type: 2}
+  UsedComputer: {fileID: 184884, guid: bb8eb4d915cbfc641af1f794f5cdd782, type: 2}
+  UsedMotor: {fileID: 191924, guid: 16fea6d46048bed47b29fa43be5f5fbd, type: 2}
+  UsedPropeller: {fileID: 111918, guid: beaebb13c99002a47808c66bf8575b23, type: 2}
+  UsedGrapple: {fileID: 152012, guid: a3eb32e88915d8e4eb17fd4ed0f79455, type: 2}
+  UsedWeapon: {fileID: 199130, guid: f512ae0abd3c55848964f949c3e9548b, type: 2}
+  Controller: {fileID: 0}
+  PlayerID: 0
+--- !u!114 &11469306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 186
+    i1: 93
+    i2: 152
+    i3: 43
+    i4: 4
+    i5: 187
+    i6: 212
+    i7: 100
+    i8: 26
+    i9: 247
+    i10: 199
+    i11: 248
+    i12: 124
+    i13: 160
+    i14: 61
+    i15: 65
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Loader
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPlayerAuthority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: UsedGrapple
+      value: 
+      objectReference: {fileID: 152012, guid: a3eb32e88915d8e4eb17fd4ed0f79455, type: 2}
+    - target: {fileID: 0}
+      propertyPath: UsedWeapon
+      value: 
+      objectReference: {fileID: 199130, guid: f512ae0abd3c55848964f949c3e9548b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Drone
+      value: 
+      objectReference: {fileID: 187292, guid: 1f84e8ea7c965544caa794a76a139d0d, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 134186}
+  m_IsPrefabParent: 1
